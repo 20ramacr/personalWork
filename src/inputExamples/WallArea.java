@@ -9,7 +9,7 @@ public class WallArea {
 		System.out.println("What is the length of the wall?");
 		area = input.nextInt();
 		area = area * 8;
-		System.out.println("The area of the wall is " + area + "feet^2");
+		System.out.println("The area of the wall is " + area + " feet^2");
 	}
 
 }
