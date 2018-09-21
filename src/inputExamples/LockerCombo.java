@@ -14,7 +14,7 @@ System.out.println("What is your second digit?");
 secondDigit = input.nextInt();
 System.out.println("What is your third digit?");
 thirdDigit = input.nextInt();
-System.out.println("Your combination is" + firstDigit + "-" + secondDigit + "-" + thirdDigit);
+System.out.println("Your combination is " + firstDigit + "-" + secondDigit + "-" + thirdDigit);
 	}
 
 }
