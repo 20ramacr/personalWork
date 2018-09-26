@@ -14,6 +14,8 @@ dollars = (int)value;
 System.out.println("The amount of dollars is " + dollars);
 quarters = (int)((value - dollars) / .25);
 System.out.println("The amount of quarters is " + quarters);
+dimes = (int)(((value - dollars) % .25) / .10);
+System.out.println("The amount of dimes is " + dimes);
 	}
 
 }
