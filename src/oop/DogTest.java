@@ -1,0 +1,12 @@
+package oop;
+
+public class DogTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Dog john = new Dog();
+john.attack();
+john.woof();
+	}
+
+}
