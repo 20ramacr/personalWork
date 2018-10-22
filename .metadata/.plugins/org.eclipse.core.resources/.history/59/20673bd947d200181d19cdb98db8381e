@@ -1,0 +1,17 @@
+package Decisions;
+import java.util.Scanner;
+public class Age {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int age=0;
+Scanner input = new Scanner(System.in);
+System.out.println("what is your age");
+if (age<=17)
+{ 
+	System.out.println("You are getting an A in this class");
+}
+System.out.println("I hope you are having a great day!");
+	}
+
+}

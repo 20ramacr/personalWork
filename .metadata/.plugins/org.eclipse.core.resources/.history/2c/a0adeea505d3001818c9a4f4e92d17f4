@@ -1,0 +1,24 @@
+package Decisions;
+import java.util.Scanner;
+public class Honors {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+double gpa= 0.0;
+double grade= 0.0;
+Scanner input= new Scanner(System.in);
+System.out.println("what is your gpa");
+gpa=input.nextDouble();
+System.out.println("what is your grade");
+grade=input.nextDouble();
+if (gpa>=3.5)
+{
+	System.out.println("You graduate with honors");	
+}
+else
+{
+	System.out.println("you do not graduate with honors");
+}
+	}
+
+}
