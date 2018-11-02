@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Divisors {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int number=0;
+int numDivisors=0;
+int greatestDiv=0;
+int greatestInt=0;
+Scanner input= new Scanner(System.in);
+System.out.println("Enter number");
+number=input.nextInt();
+for(int counter=1;counter<=number;counter++)
+{
+for (int divisors=counter; divisors>0; divisors--)
+{ if (counter%divisors==0)
+	{numDivisors=numDivisors+1;
+	}
+}
+if(numDivisors>greatestDiv)
+{numDivisors=greatestDiv;
+	counter=greatestInt;}
+numDivisors=0;
+}
+
+
+System.out.println("the number with the greatest divisors is"+ greatestInt);
+
+}}
+	
+
+

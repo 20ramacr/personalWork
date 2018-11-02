@@ -1,0 +1,27 @@
+package Decisions;
+import java.util.Scanner;
+public class NestedDecisions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int number=0;
+int sumDivisors=0;
+Scanner input=new Scanner(System.in);
+System.out.println("Enter postive int. 9999 to quit");
+number=input.nextInt();
+do
+{for(int counter=number; counter>0; counter--)
+{if (number%counter==0 && counter%2==0)
+		{
+	sumDivisors=sumDivisors+counter;
+		}	
+}
+System.out.println("the sum of divisors is"+sumDivisors);
+System.out.println("Enter postive int. 9999 to quit");
+number=input.nextInt();
+	
+}
+while(number!=9999);	
+	}
+
+}

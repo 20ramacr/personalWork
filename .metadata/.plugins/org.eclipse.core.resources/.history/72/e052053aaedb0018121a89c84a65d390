@@ -1,0 +1,15 @@
+
+public class Rows {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int number = 0;
+int counter= 0;
+for (counter=1; counter<=5; counter++)
+{System.out.println(counter);
+
+}
+	
+	}
+
+}

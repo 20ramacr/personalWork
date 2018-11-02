@@ -1,0 +1,20 @@
+package Decisions;
+import java.util.Scanner;
+public class IntegersCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+double integer=0.0;
+double product=0.0;
+Scanner input=new Scanner(System.in);
+
+while (integer<9999)
+{
+	System.out.println("Enter integer");
+integer=input.nextdouble();
+	product=integer*2;
+	System.out.println(product);
+}
+	}
+
+}

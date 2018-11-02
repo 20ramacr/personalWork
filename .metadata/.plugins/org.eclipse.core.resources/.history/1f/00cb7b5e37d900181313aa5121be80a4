@@ -1,0 +1,18 @@
+package Decisions;
+import java.util.Scanner;
+public class Range {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int counter=0;
+int hello=0;
+Scanner input=new Scanner(System.in);
+System.out.println("How many hellos would you like");
+hello=input.nextInt();
+for (counter=1; counter<=hello; counter=counter+1)
+{System.out.println(counter+" Hello");
+}
+
+	}
+
+}

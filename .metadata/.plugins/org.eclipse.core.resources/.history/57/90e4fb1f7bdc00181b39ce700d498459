@@ -1,0 +1,17 @@
+package Decisions;
+import java.util.Scanner;
+public class LargestValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int number=0;
+Scanner input=new Scanner(System.in);
+System.out.println("Enter number, 9999 to quit");
+number=input.nextInt();
+while(number!=9999)
+{	System.out.println("Enter number,9999 to quit");
+number=input.nextInt();
+}
+	}
+
+}

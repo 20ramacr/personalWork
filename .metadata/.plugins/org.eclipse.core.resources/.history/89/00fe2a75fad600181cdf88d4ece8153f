@@ -1,0 +1,19 @@
+package Decisions;
+import java.util.Scanner;
+public class Multiples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int number= 0;
+int count=0;
+Scanner input = new Scanner(System.in);
+System.out.println("Enter number");
+count=input.nextInt();
+while (number<=count)
+{
+	System.out.println(number);
+	number=number+2;
+}
+	}
+
+}
