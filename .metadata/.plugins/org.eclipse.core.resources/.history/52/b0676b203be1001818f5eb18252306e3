@@ -1,0 +1,24 @@
+package Decisions;
+import java.util.Random;
+public class Dice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random generator=new Random();
+		int min=1;
+		int max=14;
+		int roll=0;
+		int multiple=0;
+		do{
+			int randomNum=min+generator.nextInt(max-min+1);
+			if(randomNum%3==0)
+			{
+				multiple++;
+			}
+			roll++;
+		}
+		while(roll!=87);
+		System.out.println(multiple);
+	}
+
+}

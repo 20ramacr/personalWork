@@ -1,0 +1,41 @@
+package Decisions;
+import java.util.Random;
+public class FlipACoin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int min=1;
+int max=2;
+double maxPercent=0.0;
+double minPercent=0.0;
+int timeHeads=0;
+double maxPercentage=0.0;
+double minPercentage=100.0;
+		Random generator=new Random();
+for(int trial=1; trial<=1000000;trial++)
+{
+	for(int times=1;times<=100000;times++)
+	{
+		int randomNum=min+generator.nextInt(max-min+1);
+		if(randomNum==1)
+		{
+			timeHeads++;
+		}
+			
+	}
+	double percentageHeads=timeHeads/100000.0*100.0;
+	if(percentageHeads>=maxPercentage)
+	{
+		maxPercentage=percentageHeads;
+	}
+	if(percentageHeads<=minPercentage)
+	{
+		minPercentage=percentageHeads;
+	}
+	timeHeads=0;
+}
+System.out.println("max percentage:"+maxPercentage);
+System.out.println("min percentage:"+minPercentage);
+	}
+
+}

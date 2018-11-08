@@ -1,0 +1,59 @@
+package Decisions;
+import java.util.Scanner;
+import java.util.Random;
+public class RollADie2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int min=1;
+		int max=6;
+		double totalRolls=0.0;
+		int timesRolled1=0;
+		int timesRolled2=0;
+		int timesRolled3=0;
+		int timesRolled4=0;
+		int timesRolled5=0;
+		int timesRolled6=0;
+
+		Scanner input=new Scanner(System.in);
+		Random generator=new Random();
+		System.out.println("How many rolls?");
+		totalRolls=input.nextInt();
+	for(int roll=1;roll<=totalRolls;roll++)	
+	{
+		int randomNum=min+generator.nextInt(max-min+1);
+		if (randomNum==1)
+		{
+			timesRolled1++;
+		}
+		if (randomNum==2)
+		{
+			timesRolled2++;
+		}
+		if (randomNum==3)
+		{
+			timesRolled3++;
+		}
+		if (randomNum==4)
+		{
+			timesRolled4++;
+		}
+		if (randomNum==5)
+		{
+			timesRolled5++;
+		}	
+		if (randomNum==6)
+		{
+			timesRolled6++;
+		}
+	}
+	System.out.println("times rolled 1:" + timesRolled1 + " percentage times rolled 1:" + (timesRolled1/totalRolls));
+	System.out.println("times rolled 2:" + timesRolled2 + " percentage times rolled 2:" + (timesRolled2/totalRolls));
+	System.out.println("times rolled 3:" + timesRolled3 + " percentage times rolled 3:" + (timesRolled3/totalRolls));
+	System.out.println("times rolled 4:" + timesRolled4 + " percentage times rolled 4:" + (timesRolled4/totalRolls));
+	System.out.println("times rolled 5:" + timesRolled5 + " percentage times rolled 5:" + (timesRolled5/totalRolls));
+	System.out.println("times rolled 6:" + timesRolled6 + " percentage times rolled 6:" + (timesRolled6/totalRolls));
+	}
+
+}

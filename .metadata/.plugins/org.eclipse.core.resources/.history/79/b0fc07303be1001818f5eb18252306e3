@@ -1,0 +1,24 @@
+package Decisions;
+import java.util.Random;
+public class Height {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random generator=new Random();
+		int min=26;
+		int max=43;
+		int heights=0;
+		int tall=0;
+		do{
+			int randomNum=min+generator.nextInt(max-min+1);
+			if(randomNum>3)
+			{
+				tall++;
+			}
+			heights++;
+		}
+		while(heights!=248);
+		System.out.println("Taller than three feet:" + tall);
+	}
+
+}
