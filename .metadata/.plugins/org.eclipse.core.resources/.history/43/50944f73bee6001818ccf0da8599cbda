@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class CompareTo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner (System.in);
+		System.out.println("name");
+		String name1=input.nextLine();
+		System.out.println("name");
+		String name2=input.nextLine();
+		name1.compareTo(name2);
+		
+	}
+
+}
