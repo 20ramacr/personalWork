@@ -1,6 +1,6 @@
 package Interface;
 
-public class Circle {
+public class Circle implements Leah{
 
 
 		

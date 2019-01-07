@@ -1,6 +1,6 @@
 package Interface;
 
-public class Rectangle {
+public class Rectangle implements Leah{
     private double length;
     private double width;
 public Rectangle()
@@ -37,5 +37,5 @@ public double perimeter()
 public double area()
 {
         return (length * width);
-}s
+}
 }
